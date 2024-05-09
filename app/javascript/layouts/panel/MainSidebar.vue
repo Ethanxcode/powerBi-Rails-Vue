@@ -1,8 +1,8 @@
 <template>
   <nav class="flex flex-col w-[15.75rem] flex-shrink-0 bg-white h-full gap-[25px] p-4">
     <a href="index" class="flex items-center justify-center gap-[11.15px] h-[68px]">
-      <img src="/images/logo/daithuanLogo.png" alt="" />
-      <img src="/images/logo/daithuanText.png" alt="" />
+      <img :src="DaithuanLogo" alt="" />
+      <img :src="DaithuanLogoText" alt="" />
     </a>
 
     <div class="overflow-hidden flex-grow">
@@ -25,7 +25,7 @@
           >
             <li>
               <div class="inline-flex justify-center items-center">
-                <img :src="`/images/${item.icon}`" class="size-[20px]" alt="" />
+                <component :is="item.icon" class="size-[20px]" />
                 <span class="ml-[0.625rem] font-normal text-sm tracking-wide truncate">{{
                   item.name
                 }}</span>
@@ -39,24 +39,36 @@
 </template>
 
 <script setup lang="ts">
+import { DaithuanLogo, DaithuanLogoText } from '@/assets/images/logo';
+import {
+  HomeLightIcon,
+  DataPieIcon,
+  UserOutlineIcon,
+  SettingOutlinedIcon,
+  CloudDataOpsIcon,
+  DataTableOutlineSharpIcon,
+  PencilFileIcon,
+  LogoutIcon,
+} from '@/assets/icons';
+
 const menuItems = [
   {
     items: [
-      { path: 'index', icon: 'icons/iconamoon_home-light.svg', name: 'Tổng quan' },
+      { path: 'index', icon: HomeLightIcon, name: 'Tổng quan' },
       {
         path: 'data-center',
-        icon: 'icons/fluent_data-pie-24-regular.svg',
+        icon: DataPieIcon,
         name: 'Trung tâm dữ liệu',
       },
-      { path: 'users', icon: 'icons/solar_user-outline.svg', name: 'Quản lý người dùng' },
+      { path: 'users', icon: UserOutlineIcon, name: 'Quản lý người dùng' },
       {
         path: 'settings',
-        icon: 'icons/ant-design_setting-outlined.svg',
+        icon: SettingOutlinedIcon,
         name: 'Cài đặt & Phân quyền',
       },
       {
         path: 'logout',
-        icon: 'icons/fluent_data-pie-24-regular.svg',
+        icon: LogoutIcon,
         name: 'Đăng xuất',
       },
     ],
@@ -66,15 +78,15 @@ const menuItems = [
     items: [
       {
         path: 'sync-seasofts',
-        icon: 'icons/carbon_cloud-data-ops.svg',
+        icon: CloudDataOpsIcon,
         name: 'Đồng bộ từ Seasoft',
       },
       {
         path: 'sync-dms',
-        icon: 'icons/material-symbols-light_data-table-outline-sharp.svg',
+        icon: DataTableOutlineSharpIcon,
         name: 'Đồng bộ từ DMS',
       },
-      { path: 'sync-files', icon: 'icons/pepicons-pencil_file.svg', name: 'Đồng bộ từ file' },
+      { path: 'sync-files', icon: PencilFileIcon, name: 'Đồng bộ từ file' },
     ],
   },
 ];

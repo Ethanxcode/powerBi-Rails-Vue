@@ -7,11 +7,12 @@
         >
         <div class="relative">
           <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
-            <img src="/images/icons/eva_search-outline.svg" alt="Search Icon" />
+            <searchOutlineIcon />
+            <!-- <SearchIcon /> -->
           </div>
           <input
             id="default-search"
-            class="block w-full p-[10px] ps-10 text-sm text-gray-900 bg-gray-50 focus:border-grey-500 dark:-bg--bg-base dark:-placeholder--text-placeholder -placeholder--text-placeholder focus:-outline--border-grey hover:-bg--black-5% -text--text-base rounded-[6px] focus:border-gray-500 border-0"
+            class="block w-full p-[10px] ps-10 text-sm bg-gray-50 focus:border-grey-500 dark:-bg--bg-base dark:-placeholder--text-placeholder -placeholder--text-placeholder focus:-outline--border-grey hover:-bg--black-5% -text--text-base rounded-[6px] focus:border-gray-500 border-0"
             placeholder="Search..."
           />
         </div>
@@ -43,5 +44,6 @@
 </template>
 
 <script setup lang="ts">
+import { searchOutlineIcon } from '@/assets/icons';
 // Add your component logic here
 </script>

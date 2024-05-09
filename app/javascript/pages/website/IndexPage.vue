@@ -1,7 +1,7 @@
 <template>
   <div
     class="min-h-dvh min-w-dvw bg-cover bg-center flex justify-center items-center"
-    :style="`background-image: url('/images/auth.png')`"
+    :style="`background-image: url(${authImage})`"
   >
     <div class="absolute inset-0 bg-black opacity-50"></div>
     <div
@@ -21,5 +21,7 @@
 </template>
 
 <script setup lang="ts">
+import authImage from '@/assets/images/auth.png';
+
 const pageName = 'Index';
 </script>

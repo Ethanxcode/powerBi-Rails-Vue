@@ -4,11 +4,7 @@
     class="hidden h-dvh flex-col items-center justify-center md:grid lg:max-w-none lg:grid-cols-2 lg:px-0"
   >
     <div class="relative hidden h-full flex-col bg-muted text-white lg:flex dark:border-r">
-      <img
-        src="/images/auth.png"
-        alt="Authentication"
-        class="absolute inset-0 b h-full object-cover"
-      />
+      <img :src="authImage" alt="Authentication" class="absolute inset-0 b h-full object-cover" />
 
       <div class="absolute w-full text-center z-20 bottom-10">
         <footer class="text-lg font-light tracking-widest -text--bg-base">
@@ -25,8 +21,8 @@
       <div class="flex w-full flex-col justify-center space-y-6 sm:w-[568px]">
         <div class="flex flex-col space-y-2">
           <a href="index" class="flex items-center justify-center gap-[11.15px] h-[68px]">
-            <img src="/images/logo/daithuanLogo.png" class="inset-0 b h-full object-cover" alt="" />
-            <img src="/images/logo/daithuanText.png" alt="" />
+            <img :src="DaithuanLogo" class="inset-0 b h-full object-cover" alt="" />
+            <img :src="DaithuanLogoText" alt="" />
           </a>
         </div>
         <form @submit="onSubmit">
@@ -36,7 +32,7 @@
                 for="email"
                 class="absolute inset-y-0 flex items-center justify-center w-[60px] border-r border-solid border-r-[#CBD5E1]"
               >
-                <img src="/images/icons/phoneIcon.svg" class="size-[18px]" alt="Phone Icon" />
+                <img src="@/assets/icons/phoneIcon.svg" class="size-[18px]" alt="Phone Icon" />
               </label>
               <input
                 v-model="email"
@@ -55,7 +51,7 @@
                 for="password"
                 class="absolute inset-y-0 flex items-center justify-center w-[60px] border-r border-solid border-r-[#CBD5E1]"
               >
-                <img src="/images/icons/lockIcon.svg" class="size-[18px]" alt="Lock Icon" />
+                <img src="@/assets/icons/lockIcon.svg" class="size-[18px]" alt="Lock Icon" />
               </label>
               <input
                 v-model="password"
@@ -104,6 +100,9 @@ import { useAuthStore } from '@/stores/auth.store';
 import { IUserLogin } from '@/types/general';
 import { Toastify } from '@/utils/Toastify';
 import { validationSchema } from '@/validators/auth.validator';
+import authImage from '@/assets/images/auth.png';
+import { DaithuanLogo, DaithuanLogoText } from '@/assets/images/logo';
+
 const authStore = useAuthStore();
 const loggedIn = computed(() => authStore.isAuthenticated);
 
