@@ -98,7 +98,7 @@ group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
   gem 'capybara'
   gem 'database_cleaner-active_record'
-  gem 'factory_bot_rails', '< 6.4'
+  gem 'factory_bot_rails', '< 6.4', require: false
   gem 'faker'
   gem 'shoulda-matchers'
   # RSpec matchers for JSON API.
