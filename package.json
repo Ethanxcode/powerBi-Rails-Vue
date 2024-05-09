@@ -58,6 +58,6 @@
     "*.{js,vue,ts,tsx}": [
       "yarn lint"
     ],
-    "*.{js,css,scss,md,vue,json}": "prettier --write"
+    "*.{ts,js,css,scss,md,vue,json}": "prettier --write"
   }
 }
