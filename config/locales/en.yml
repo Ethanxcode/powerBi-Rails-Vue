@@ -1,0 +1,151 @@
+# Files in the config/locales directory are used for internationalization and
+# are automatically loaded by Rails. If you want to use locales other than
+# English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t "hello"
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t("hello") %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# To learn more about the API, please read the Rails Internationalization guide
+# at https://guides.rubyonrails.org/i18n.html.
+#
+# Be aware that YAML interprets the following case-insensitive strings as
+# booleans: `true`, `false`, `on`, `off`, `yes`, `no`. Therefore, these strings
+# must be quoted to be interpreted as strings. For example:
+#
+#     en:
+#       "yes": yup
+#       enabled: "ON"
+
+en:
+  panel: 'Panel'
+  models:
+    data_center: Data Center
+    sync_dms: Sync DMS
+    sync_seasoft: Sync SEASOFT
+    sync_files: Sync Files
+    users: Users management
+  ransack:
+    asc: ascending
+    desc: descending
+    predicates:
+      cont: contains
+      cont_all: contains all
+      cont_any: contains any
+      not_cont: not contains
+      start: starts with
+      end: ends with
+      gt: greater than
+      lt: less than
+      not_eq: not equal with
+      eq: equal with
+      not_eq_all: not equal with all
+      not_eq_any: not equal with any
+  attributes:
+    id_order_detail: 'Order Detail ID'
+    index: 'Index'
+    dms_status: 'DMS Status'
+    seasoft_status: 'SEASOFT Status'
+    order_status: 'Order Status'
+    order_source: 'Order Source'
+    order_code: 'Order Code'
+    customer_code: 'Customer Code'
+    customer_name: 'Customer Name'
+    customer_phone: 'Customer Phone'
+    shipping_address: 'Shipping Address'
+    order_date: 'Order Date'
+    product_code: 'Product Code'
+    product_name: 'Product Name'
+    unit_name: 'Unit Name'
+    quantity: 'Quantity'
+    is_promotion: 'Promotion'
+    price_before_tax: 'Price Before Tax'
+    price: 'Price'
+    '%CK/DH': '% Discount/Order'
+    '%CK/SP': '% Discount/Product'
+    ckdh: 'Discount/Order'
+    cksp": 'Discount/Product'
+    tt_tt: 'Total Amount'
+    tt_chua_vat_da_tru_ck: 'Total Amount (excluding VAT, after discount)'
+    tien_vat: 'VAT Amount'
+    tt_vat: 'Total Amount (including VAT)'
+    tong_tt_truoc_vat: 'Total Amount (excluding VAT)'
+    tong_ck: 'Total Discount'
+    tong_tt_chua_vat_da_tru_ck: 'Total Amount (excluding VAT, after discount)'
+    tong_tien_vat: 'Total VAT Amount'
+    tong_tt_vat: 'Total Amount (including VAT)'
+    bill_no: 'Bill Number'
+    area_code: 'Area Code'
+    area_name: 'Area Name'
+    region_code: 'Region Code'
+    region_name: 'Region Name'
+    distributor_code: 'Distributor Code'
+    distributor_name: 'Distributor Name'
+    rsm_code: 'RSM Code'
+    rsm_name: 'RSM Name'
+    asm_code: 'ASM Code'
+    asm_name: 'ASM Name'
+    sup_code: 'SUP Code'
+    sup_name: 'SUP Name'
+    sale_code: 'SALE Code'
+    sale_name: 'SALE Name'
+    channel: 'Channel'
+    visit: 'Visit'
+    brand_code: 'Brand Code'
+    brand_name: 'Brand Name'
+    created_at: 'Created At'
+    updated_at: 'Updated At'
+  users:
+    id: 'ID'
+    account: 'Account'
+    email: 'Email'
+    phone_number: 'Phone Number'
+    full_name: 'Full Name'
+    permission: 'Permission'
+    status: 'Status'
+  article:
+    title: Article Title
+    body: Main Content
+  defaults:
+    not_available: 'N/A'
+    search_label: 'Search'
+    search_placeholder: 'Please enter...'
+    search_type: 'Select Type'
+    method: 'Method'
+    last_sync: 'Last Sync at'
+    from: 'From'
+    to: 'To'
+    Synchronized: 'Synchronized'
+    upload: 'Upload file'
+    noData: 'No data'
+    exportData: 'Export data'
+    importData: 'Import data'
+    filter: 'Filter'
+  activerecord:
+    errors:
+      models:
+        sync_file:
+          attributes:
+            order_date:
+              blank: 'Order date cannot be blank'
+          blank: 'Sync file cannot be blank'
+      messages:
+        blank: 'Cannot be blank'
+  errors:
+    attributes:
+      order_date:
+        blank: 'Order date cannot be blank'
+    messages:
+      blank: 'Cannot be blank'
+      invalid_date: 'Sale date must be a valid date'
+      not_a_number: 'Phone must be a number'

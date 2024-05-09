@@ -1,0 +1,62 @@
+{
+  "name": "power-bi",
+  "version": "1.0.0",
+  "private": "true",
+  "scripts": {
+    "lint": "vue-tsc --noEmit && eslint 'app/javascript/**/*.{js,vue,ts,tsx}' --fix",
+    "format": "prettier ./**/*.{js,css,scss,md,vue,json,ts} --write",
+    "prepare": "husky install",
+    "lint-staged": "lint-staged",
+    "dev": "./bin/vite dev",
+    "build": "vite build"
+  },
+  "dependencies": {
+    "@babel/types": "^7.23.3",
+    "@vee-validate/zod": "^4.12.7",
+    "axios": "^1.6.2",
+    "pinia": "^2.1.7",
+    "vee-validate": "^4.12.7",
+    "vite-plugin-windicss": "^1.9.3",
+    "vue": "^3.3.8",
+    "vue-query": "^1.26.0",
+    "vue-router": "^4.2.5",
+    "vue3-toastify": "^0.2.1",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@rushstack/eslint-patch": "^1.5.1",
+    "@tailwindcss/forms": "^0.5.7",
+    "@tailwindcss/jit": "^0.1.18",
+    "@types/node": "^20.9.2",
+    "@typescript-eslint/eslint-plugin": "^6.11.0",
+    "@typescript-eslint/parser": "^6.11.0",
+    "@vitejs/plugin-vue": "^4.5.0",
+    "@vue/eslint-config-prettier": "^8.0.0",
+    "@vue/eslint-config-typescript": "^12.0.0",
+    "autoprefixer": "^10.4.19",
+    "eslint": "^8.54.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-import-resolver-custom-alias": "^1.3.2",
+    "eslint-plugin-import": "^2.29.0",
+    "eslint-plugin-vue": "^9.18.1",
+    "husky": "^8.0.3",
+    "lint-staged": "^15.1.0",
+    "postcss": "^8.4.38",
+    "prettier": "^3.1.0",
+    "sass": "^1.69.5",
+    "tailwindcss": "^3.4.3",
+    "typescript": "^4.9.5",
+    "vite": "^5.2.11",
+    "vite-plugin-ruby": "^3.2.2",
+    "vue-tsc": "^1.8.22"
+  },
+  "resolutions": {
+    "**/tsconfig-paths/json5": "^2.2.3"
+  },
+  "lint-staged": {
+    "*.{js,vue,ts,tsx}": [
+      "yarn lint"
+    ],
+    "*.{js,css,scss,md,vue,json}": "prettier --write"
+  }
+}

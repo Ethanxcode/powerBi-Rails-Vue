@@ -1,0 +1,62 @@
+@import './css_reset';
+@import './variables';
+@import './general';
+@import './main_menu.scss';
+@import './form.scss';
+@import './pagy.scss';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+input[type='date']::-webkit-calendar-picker-indicator {
+  background: transparent;
+  bottom: 0;
+  color: transparent;
+  cursor: pointer;
+  height: auto;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: auto;
+}
+
+[multiple]:focus,
+[type='date']:focus,
+[type='datetime-local']:focus,
+[type='email']:focus,
+[type='month']:focus,
+[type='number']:focus,
+[type='password']:focus,
+[type='search']:focus,
+[type='tel']:focus,
+[type='text']:focus,
+[type='time']:focus,
+[type='url']:focus,
+[type='week']:focus,
+select:focus,
+textarea:focus {
+  --tw-ring-color: initial !important;
+}
+
+a,
+button,
+input,
+label,
+select {
+  cursor: pointer;
+}
+
+// body {
+//   font-size: 16px;
+//   line-height: 1.8;
+//   font-weight: normal;
+//   background: $--color-app-background;
+//   color: $--color-text-primary;
+// }
+// .container {
+//   width: 100%;
+//   margin-right: auto;
+//   margin-left: auto;
+// }

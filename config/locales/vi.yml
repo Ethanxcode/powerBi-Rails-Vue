@@ -1,0 +1,124 @@
+vi:
+  panel: 'Bảng điều khiển'
+  models:
+    data_center: Trung tâm dữ liệu
+    sync_dms: Đồng bộ từ DMS
+    sync_seasoft: Đồng bộ từ SEASOFT
+    sync_files: Đồng bộ từ files
+    users: Quản lý người dùng
+  ransack:
+    asc: tăng dần
+    desc: giảm dần
+    predicates:
+      cont: chứa
+      cont_all: chứa tất cả
+      cont_any: chứa bất kỳ
+      not_cont: không chứa
+      start: bắt đầu bằng
+      end: kết thúc bằng
+      gt: lớn hơn
+      lt: nhỏ hơn
+      not_eq: không bằng
+      eq: bằng
+      eq_any: bằng bất kỳ
+      eq_all: bằng tất cả
+      not_eq_all: không bằng tất cả
+      not_eq_any: không bằng bất kỳ
+  attributes:
+    id_order_detail: 'ID Chi tiết đơn hàng'
+    index: 'STT'
+    dms_status: 'Trạng thái DMS'
+    seasoft_status: 'Trạng thái SEASOFT'
+    order_status: 'Trạng thái đơn hàng'
+    order_source: 'Nguồn'
+    order_code: 'Mã đơn hàng'
+    customer_code: 'Mã khách hàng'
+    customer_name: 'Tên khách hàng'
+    customer_phone: 'Điện thoại'
+    shipping_address: 'Địa chỉ giao hàng'
+    order_date: 'Ngày bán hàng'
+    product_code: 'Mã sản phẩm'
+    product_name: 'Tên sản phẩm'
+    unit_name: 'Đơn vị tính'
+    quantity: 'Số lượng bán'
+    is_promotion: 'Khuyến mãi'
+    price_before_tax: 'Đơn giá (-VAT)'
+    price: 'Đơn giá (+VAT)'
+    '%CK/DH': '% Chiết khấu đơn hàng'
+    '%CK/SP': '% Chiết khấu sản phẩm'
+    ckdh: 'Chiết khấu đơn hàng'
+    cksp: 'Chiết khấu sản phẩm'
+    tt_tt: 'Thành tiền TT'
+    tt_chua_vat_da_tru_ck: 'TT (chưa VAT, đã trừ CK)'
+    tien_vat: 'Tiền VAT'
+    tt_vat: 'Thành tiền (+VAT)'
+    tong_tt_truoc_vat: 'Tổng TT trước VAT'
+    tong_ck: 'Tổng CK'
+    tong_tt_chua_vat_da_tru_ck: 'Tổng TT (chưa VAT, đã trừ CK)'
+    tong_tien_vat: 'Tổng tiền VAT'
+    tong_tt_vat: 'Tổng TT (+VAT)'
+    bill_no: 'Số đơn hàng'
+    area_code: 'Mã Khu vực'
+    area_name: 'Tên Khu vực'
+    region_code: 'Mã Vùng'
+    region_name: 'Tên Vùng'
+    distributor_code: 'Mã NPP'
+    distributor_name: 'Tên NPP'
+    rsm_code: 'Mã RSM'
+    rsm_name: 'Tên RSM'
+    asm_code: 'Mã ASM'
+    asm_name: 'Tên ASM'
+    sup_code: 'Mã SUP'
+    sup_name: 'Tên SUP'
+    sale_code: 'Mã SALE'
+    sale_name: 'Tên SALE'
+    channel: 'Kênh'
+    visit: 'Viếng thăm'
+    brand_code: 'Mã Brand'
+    brand_name: 'Tên Brand'
+    created_at: 'Ngày tạo'
+    updated_at: 'Ngày cập nhật'
+  users:
+    id: 'ID'
+    account: 'Tài khoản'
+    email: 'Email'
+    phone_number: 'Số điện thoại'
+    full_name: 'Họ và tên'
+    permission: 'Quyền hạn'
+    status: 'Trạng thái'
+  article:
+    title: Tiêu đề bài viết
+    body: Nội dung chính
+  defaults:
+    not_available: 'N/A'
+    search_label: 'Tìm kiếm'
+    search_placeholder: 'Vui lòng nhập...'
+    search_type: 'Loại tìm kiếm'
+    method: 'Phương thức'
+    last_sync: 'Lần đồng bộ cuối'
+    from: 'Từ ngày'
+    to: 'Đến ngày'
+    Synchronized: 'Đồng bộ'
+    upload: 'Tải lên file'
+    noData: 'Không có dữ liệu'
+    exportData: 'Xuất dữ liệu'
+    importData: 'Nhập dữ liệu'
+    filter: 'Lọc'
+  activerecord:
+    errors:
+      models:
+        sync_file:
+          attributes:
+            order_date:
+              blank: 'Ngày đặt hàng không được để trống'
+          blank: 'Tệp đồng bộ không được để trống'
+      messages:
+        blank: 'Không được để trống'
+  errors:
+    attributes:
+      order_date:
+        blank: 'Ngày đặt hàng không được để trống'
+    messages:
+      blank: 'Không được để trống'
+      invalid_date: 'Ngày bán hàng phải là một ngày hợp lệ'
+      not_a_number: 'Điện thoại phải là một số'
