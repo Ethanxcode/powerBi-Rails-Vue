@@ -43,3 +43,7 @@ node_modules
 
 # Ignore uncategorized files
 .DS_Store
+factory_bot_rails-*.gem
+test.db
+tmp
+.rubocop-https*
