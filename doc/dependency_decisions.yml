@@ -3,7 +3,7 @@
   - development
   - &1
     :who: https://github.com/zakariaf/rails-base-app
-    :why:
+    :why: 
     :versions: []
     :when: 2022-04-13 03:41:00.215706000 Z
 - - :ignore_group
@@ -13,7 +13,7 @@
   - MIT
   - &2
     :who: https://github.com/zakariaf/rails-base-app
-    :why:
+    :why: 
     :versions: []
     :when: 2022-04-13 03:45:00.215706000 Z
 - - :permit
@@ -81,3 +81,58 @@
     :versions:
     - 1.6.51
     :when: 2022-05-26 21:18:54.099203000 Z
+- - :approve
+  - "."
+  - :who: 
+    :why: 
+    :versions: []
+    :when: 2024-05-09 10:34:08.853934372 Z
+- - :approve
+  - big-integer
+  - :who: 
+    :why: 
+    :versions:
+    - 1.6.52
+    :when: 2024-05-09 10:36:42.925275393 Z
+- - :approve
+  - caniuse-lite
+  - :who: 
+    :why: 
+    :versions:
+    - 1.0.30001617
+    :when: 2024-05-09 10:36:43.478138956 Z
+- - :approve
+  - jackspeak
+  - :who: 
+    :why: 
+    :versions:
+    - 2.3.6
+    :when: 2024-05-09 10:36:44.077668401 Z
+- - :approve
+  - mdn-data
+  - :who: 
+    :why: 
+    :versions:
+    - 2.0.28
+    :when: 2024-05-09 10:36:44.826037434 Z
+- - :approve
+  - mdn-data
+  - :who: 
+    :why: 
+    :versions:
+    - 2.0.30
+    :when: 2024-05-09 10:36:45.565467027 Z
+- - :approve
+  - path-scurry
+  - :who: 
+    :why: 
+    :versions:
+    - 1.10.2
+    :when: 2024-05-09 10:36:46.162271766 Z
+- - :approve
+  - sidekiq
+  - :who: 
+    :why: 
+    :versions:
+    - 7.2.4
+    :when: 2024-05-09 10:36:46.782290963 Z
