@@ -48,7 +48,7 @@ Several gems and packages are included in this example app that I've been using 
 
 ## Tech stack
 
-Initially, I used the `rails new baseapp -c tailwindcss -d postgresql` command to initialize the project using the importmaps and default configurations, but I have since removed the importmaps, tailwindcss, and all default configurations in favor of using Vite.
+Initially, I used the `rails new datawarehouse -c tailwindcss -d postgresql` command to initialize the project using the importmaps and default configurations, but I have since removed the importmaps, tailwindcss, and all default configurations in favor of using Vite.
 You can see a list of gems that are in the project with a link to their commit. Therefore, you can easily find what we configured for each gem.
 
 **Note** there is a commit/branch for each gem/package and adding/changing a code in the repo, and you can see the list of the steps we did in order at the below. e.g. step 1 in the repo was **init project** and using **PostgreSQL**. step number 2 was adding **RSpec**, etc.
@@ -196,8 +196,8 @@ To run the app locally, you need to have [Ruby](https://www.ruby-lang.org/en/) a
 ### 1. Clone the repo
 
 ```bash
-git clone https://github.com/zakariaf/rails-base-app baseapp
-cd baseapp
+git clone https://github.com/zakariaf/rails-base-app datawarehouse
+cd datawarehouse
 ```
 
 ### 2. Install dependencies
@@ -251,7 +251,7 @@ docker compose build
 
 ## Renaming the project
 
-This app is named `baseapp` and the module is named `BaseApp`. But for sure you would like to have a different name.
+This app is named `datawarehouse` and the module is named `DataWarehouse`. But for sure you would like to have a different name.
 
 The only thing you need to do is just running the `bin/rename-project yourappname YouAppName` script.
 as you see this script needs 2 arguments:

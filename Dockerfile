@@ -8,12 +8,26 @@ ARG NODE_VERSION
 ARG YARN_VERSION
 ARG BUNDLER_VERSION
 
-RUN apk add --update \
+# RUN apk add --update \
+#   git \
+#   postgresql-dev \
+#   tzdata \
+#   nodejs=$NODE_VERSION \
+#   yarn=$YARN_VERSION
+
+# RUN apk add --update \
+#   git \
+#   postgresql-dev \
+#   tzdata \
+#   nodejs=$NODE_VERSION \
+#   yarn
+
+  RUN apk add --update \
   git \
   postgresql-dev \
   tzdata \
-  nodejs=$NODE_VERSION \
-  yarn=$YARN_VERSION
+  nodejs \
+  yarn
 
 # Upgrade RubyGems and install the latest Bundler version
 RUN gem update --system && \
