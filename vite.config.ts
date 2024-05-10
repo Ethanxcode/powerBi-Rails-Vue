@@ -1,13 +1,13 @@
 import { defineConfig } from 'vite';
 import RubyPlugin from 'vite-plugin-ruby';
 import vue from '@vitejs/plugin-vue';
-import svg from 'vite-svg-loader';
+import svgLoader from 'vite-svg-loader'
 
 export default defineConfig({
   resolve: {
     extensions: ['.mjs', '.js', '.ts', '.jsx', '.tsx', '.json', '.vue'],
   },
-  plugins: [vue(), RubyPlugin(), svg()],
+  plugins: [vue(), RubyPlugin(), svgLoader()],
   css: {
     preprocessorOptions: {
       scss: {

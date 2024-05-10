@@ -20,7 +20,7 @@
       </router-link> -->
       <div class="flex w-full flex-col justify-center space-y-6 sm:w-[568px]">
         <div class="flex flex-col space-y-2">
-          <a href="index" class="flex items-center justify-center gap-[11.15px] h-[68px]">
+          <a href="index" class="flex items-center gap-[11.15px] h-[68px]">
             <img :src="DaithuanLogo" class="inset-0 b h-full object-cover" alt="" />
             <img :src="DaithuanLogoText" alt="" />
           </a>
@@ -32,7 +32,7 @@
                 for="email"
                 class="absolute inset-y-0 flex items-center justify-center w-[60px] border-r border-solid border-r-[#CBD5E1]"
               >
-                <img src="@/assets/icons/phoneIcon.svg" class="size-[18px]" alt="Phone Icon" />
+                <phoneIcon />
               </label>
               <input
                 v-model="email"
@@ -51,7 +51,7 @@
                 for="password"
                 class="absolute inset-y-0 flex items-center justify-center w-[60px] border-r border-solid border-r-[#CBD5E1]"
               >
-                <img src="@/assets/icons/lockIcon.svg" class="size-[18px]" alt="Lock Icon" />
+                <lockIcon />
               </label>
               <input
                 v-model="password"
@@ -102,6 +102,7 @@ import { Toastify } from '@/utils/Toastify';
 import { validationSchema } from '@/validators/auth.validator';
 import authImage from '@/assets/images/auth.png';
 import { DaithuanLogo, DaithuanLogoText } from '@/assets/images/logo';
+import { lockIcon, phoneIcon } from '@/assets/icons';
 
 const authStore = useAuthStore();
 const loggedIn = computed(() => authStore.isAuthenticated);

@@ -3,12 +3,11 @@
     <div class="flex items-center justify-between gap-[40px] mb-[25px]">
       <form class="md:max-w-[620px] xxl:max-w-[800px] w-full bg-[#FAFAFA]">
         <label for="default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only"
-          >Search</label
-        >
+          >Search
+        </label>
         <div class="relative">
           <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
             <searchOutlineIcon />
-            <!-- <SearchIcon /> -->
           </div>
           <input
             id="default-search"

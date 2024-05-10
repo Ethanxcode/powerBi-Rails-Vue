@@ -9,14 +9,18 @@
       </h2>
 
       <p class="text-base italic font-light">(Last sync at 12:00:00 pm - 01/12/2023)</p>
+      <Button :icon="radixIconUpdate" color="-bg--color-green-4" text="Synchronized" />
+      <Button
+        :icon="reportBoxPlusOutlineIcon"
+        color="-bg--color-blue hover:-bg--color-blue"
+        text="Click me"
+      />
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
+import { Button } from '@/components';
+import { reportBoxPlusOutlineIcon, radixIconUpdate } from '@/assets/icons';
 const pageName = 'Tổng quan';
-
-import { Toastify } from '@/utils/Toastify';
-
-Toastify('Welcome to the panel', 200);
 </script>

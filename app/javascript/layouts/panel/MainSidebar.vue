@@ -41,34 +41,34 @@
 <script setup lang="ts">
 import { DaithuanLogo, DaithuanLogoText } from '@/assets/images/logo';
 import {
-  HomeLightIcon,
-  DataPieIcon,
-  UserOutlineIcon,
-  SettingOutlinedIcon,
-  CloudDataOpsIcon,
-  DataTableOutlineSharpIcon,
-  PencilFileIcon,
-  LogoutIcon,
+  homeLightIcon,
+  userOutlineIcon,
+  settingOutlinedIcon,
+  cloudDataOpsIcon,
+  dataTableOutlineSharpIcon,
+  logoutIcon,
+  dataPieIcon,
+  pencilFileIcon,
 } from '@/assets/icons';
 
 const menuItems = [
   {
     items: [
-      { path: 'index', icon: HomeLightIcon, name: 'Tổng quan' },
+      { path: 'index', icon: homeLightIcon, name: 'Tổng quan' },
       {
         path: 'data-center',
-        icon: DataPieIcon,
+        icon: dataPieIcon,
         name: 'Trung tâm dữ liệu',
       },
-      { path: 'users', icon: UserOutlineIcon, name: 'Quản lý người dùng' },
+      { path: 'users', icon: userOutlineIcon, name: 'Quản lý người dùng' },
       {
         path: 'settings',
-        icon: SettingOutlinedIcon,
+        icon: settingOutlinedIcon,
         name: 'Cài đặt & Phân quyền',
       },
       {
         path: 'logout',
-        icon: LogoutIcon,
+        icon: logoutIcon,
         name: 'Đăng xuất',
       },
     ],
@@ -78,15 +78,15 @@ const menuItems = [
     items: [
       {
         path: 'sync-seasofts',
-        icon: CloudDataOpsIcon,
+        icon: cloudDataOpsIcon,
         name: 'Đồng bộ từ Seasoft',
       },
       {
         path: 'sync-dms',
-        icon: DataTableOutlineSharpIcon,
+        icon: dataTableOutlineSharpIcon,
         name: 'Đồng bộ từ DMS',
       },
-      { path: 'sync-files', icon: PencilFileIcon, name: 'Đồng bộ từ file' },
+      { path: 'sync-files', icon: pencilFileIcon, name: 'Đồng bộ từ file' },
     ],
   },
 ];

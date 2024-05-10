@@ -8,34 +8,35 @@
       hoverColor ? `hover:${hoverColor}` : `hover:${color}`,
     ]"
   >
-    <img v-if="icon" :src="icon" class="" />
+    <component :is="icon" />
+
     <span class="text-base font-bold -text--text-white">{{ text }}</span>
   </button>
 </template>
 
-<script>
-export default {
-  props: {
-    classes: {
-      type: String,
-      default: '',
-    },
-    color: {
-      type: String,
-      default: '',
-    },
-    hoverColor: {
-      type: String,
-      default: '',
-    },
-    icon: {
-      type: String,
-      default: '',
-    },
-    text: {
-      type: String,
-      default: '',
-    },
+<script setup lang="ts">
+import { defineProps } from 'vue';
+
+const { classes, color, hoverColor, icon, text } = defineProps({
+  classes: {
+    type: String,
+    default: '',
   },
-};
+  color: {
+    type: String,
+    default: '',
+  },
+  hoverColor: {
+    type: String,
+    default: '',
+  },
+  icon: {
+    type: String,
+    default: '',
+  },
+  text: {
+    type: String,
+    default: '',
+  },
+});
 </script>
